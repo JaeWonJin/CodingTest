@@ -21,5 +21,8 @@
     <ClCompile Include="11650%28좌표 정렬하기%29.cpp">
       <Filter>정렬</Filter>
     </ClCompile>
+    <ClCompile Include="병합정렬.cpp">
+      <Filter>정렬</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

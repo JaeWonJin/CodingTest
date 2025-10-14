@@ -9,20 +9,29 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="정렬">
+    <Filter Include="소스 파일\정렬">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\브루트포스">
+      <UniqueIdentifier>{016a6859-3dcf-4203-818a-e48c17029e41}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="정렬.cpp">
-      <Filter>정렬</Filter>
+      <Filter>소스 파일\정렬</Filter>
     </ClCompile>
     <ClCompile Include="11650%28좌표 정렬하기%29.cpp">
-      <Filter>정렬</Filter>
+      <Filter>소스 파일\정렬</Filter>
     </ClCompile>
     <ClCompile Include="병합정렬.cpp">
-      <Filter>정렬</Filter>
+      <Filter>소스 파일\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="블랙잭(2798).cpp">
+      <Filter>소스 파일\브루트포스</Filter>
+    </ClCompile>
+    <ClCompile Include="블랙잭(2798)-번외-실제조합구성까지구하기.cpp">
+      <Filter>소스 파일\브루트포스</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

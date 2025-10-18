@@ -39,5 +39,8 @@
     <ClCompile Include="영화감독 숌(1436).cpp">
       <Filter>소스 파일\브루트포스</Filter>
     </ClCompile>
+    <ClCompile Include="일곱 난쟁이(2309).cpp">
+      <Filter>소스 파일\브루트포스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

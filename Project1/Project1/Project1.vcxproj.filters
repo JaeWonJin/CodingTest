@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\브루트포스">
       <UniqueIdentifier>{016a6859-3dcf-4203-818a-e48c17029e41}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\재귀/백트레킹">
+      <UniqueIdentifier>{fb20a845-92ce-4afa-a15f-9f674d840754}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="정렬.cpp">
@@ -41,6 +44,24 @@
     </ClCompile>
     <ClCompile Include="일곱 난쟁이(2309).cpp">
       <Filter>소스 파일\브루트포스</Filter>
+    </ClCompile>
+    <ClCompile Include="사탕 게임(3085).cpp">
+      <Filter>소스 파일\브루트포스</Filter>
+    </ClCompile>
+    <ClCompile Include="N과M(1)(15649).cpp">
+      <Filter>소스 파일\재귀/백트레킹</Filter>
+    </ClCompile>
+    <ClCompile Include="N과M(2)(15650).cpp">
+      <Filter>소스 파일\재귀/백트레킹</Filter>
+    </ClCompile>
+    <ClCompile Include="N과M%283%29%2815651%29.cpp">
+      <Filter>소스 파일\재귀/백트레킹</Filter>
+    </ClCompile>
+    <ClCompile Include="N과M(4)(15652).cpp">
+      <Filter>소스 파일\재귀/백트레킹</Filter>
+    </ClCompile>
+    <ClCompile Include="N-Queen(9663).cpp">
+      <Filter>소스 파일\재귀/백트레킹</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

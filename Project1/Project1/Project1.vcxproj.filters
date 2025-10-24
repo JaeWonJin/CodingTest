@@ -19,6 +19,12 @@
     <Filter Include="소스 파일\재귀/백트레킹">
       <UniqueIdentifier>{fb20a845-92ce-4afa-a15f-9f674d840754}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\그래프">
+      <UniqueIdentifier>{ab46dfc6-3d59-4e55-99ad-106b4518b6a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\그리디">
+      <UniqueIdentifier>{a7a46956-36c8-4296-9dd2-8dcfb71908f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="정렬.cpp">
@@ -62,6 +68,27 @@
     </ClCompile>
     <ClCompile Include="N-Queen(9663).cpp">
       <Filter>소스 파일\재귀/백트레킹</Filter>
+    </ClCompile>
+    <ClCompile Include="그래프입력인접리스트.cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="DFS와 BFS(1260).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="미로 탐색(2178).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="토마토(7576).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="바이러스(2606).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="동전 0(11047).cpp">
+      <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="회의실 배정(1931).cpp">
+      <Filter>소스 파일\그리디</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

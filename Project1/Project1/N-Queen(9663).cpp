@@ -8,64 +8,53 @@ using namespace std;
 int N;
 int CombCnt = 0;
 vector<pair<int, int>> vecCurComb;
+vector<int> vecColCheck, vecDiagDownRightCheck, vecDiagDownLeftCheck;
 
 bool CheckPosValid(int _Row, int _Col)
 {
-	for (const auto& point : vecCurComb)
-	{
-		int CmpRow = point.first;
-		int CmpCol = point.second;
-
-		if (_Row != CmpRow
-			&& _Col != CmpCol
-			&& abs(_Row - CmpRow) != abs(_Col - CmpCol))
-		{
-			continue;
-		}
-
-		return false;
-	}
+	if (vecColCheck[_Col]) return false;
+	int DiagDR = (N - 1) - _Col + _Row;
+	if (vecDiagDownRightCheck[DiagDR]) return false;
+	int DiagDL = _Row + _Col;
+	if (vecDiagDownLeftCheck[DiagDL]) return false;
 
 	return true;
 }
 
-void GetNextPos(int _Row, int _Col, int& _NextRow, int& _NextCol)
+
+void PushComb(int _Row, int _Col)
 {
-	_NextRow = _Row;
-	_NextCol = _Col + 1;
-	if (_NextCol >= N)
-	{
-		_NextCol = 0;
-		++_NextRow;
-	}
+	int DiagDR = (N - 1) - _Col + _Row;
+	int DiagDL = _Row + _Col;
+	vecColCheck[_Col] = 1; vecDiagDownRightCheck[DiagDR] = 1; vecDiagDownLeftCheck[DiagDL] = 1;
+	vecCurComb.push_back(make_pair(_Row, _Col));
 }
 
-void CalcNQueenComb(int _Row, int _Col, int _RemainCnt)
+void PopComb()
 {
-	if (_RemainCnt == 0)
+	int Row = vecCurComb.back().first;
+	int Col = vecCurComb.back().second;
+	int DiagDR = (N - 1) - Col + Row;
+	int DiagDL = Row + Col;
+	vecColCheck[Col] = 0; vecDiagDownRightCheck[DiagDR] = 0; vecDiagDownLeftCheck[DiagDL] = 0;
+	vecCurComb.pop_back();
+}
+
+void CalcNQueenComb(int _Row)
+{
+	if (_Row >= N)
 	{
 		++CombCnt;
 		return;
 	}
-	if (_Row >= N)
-	{
-		return;
-	}
 
-	int NextRow, NextCol;
-	int StartCol = _Col;
-	for (int Row = _Row; Row < N; ++Row)
+	for (int Col = 0; Col < N; ++Col)
 	{
-		if (Row > _Row) StartCol = 0;
-		for (int Col = StartCol; Col < N; ++Col)
+		if (CheckPosValid(_Row, Col))
 		{
-			if (CheckPosValid(Row, Col))
-			{
-				GetNextPos(Row, Col, NextRow, NextCol);
-				vecCurComb.push_back(make_pair(Row, Col));
-				CalcNQueenComb(NextRow, NextCol, _RemainCnt - 1);
-				vecCurComb.pop_back();
-			}
+			PushComb(_Row, Col);
+			CalcNQueenComb(_Row + 1);
+			PopComb();
 		}
 	}
 }
@@ -77,7 +66,11 @@ int main()
 
 	cin >> N;
 
-	CalcNQueenComb(0, 0, N);
+	vecColCheck.resize(N);
+	vecDiagDownLeftCheck.resize(2 * N - 1);
+	vecDiagDownRightCheck.resize(2 * N - 1);
+
+	CalcNQueenComb(0);
 
 	cout << CombCnt;
 

@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\그리디">
       <UniqueIdentifier>{a7a46956-36c8-4296-9dd2-8dcfb71908f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\이분탐색">
+      <UniqueIdentifier>{066f5fd2-b187-4c6b-81aa-f8bfb3fed5f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="정렬.cpp">
@@ -89,6 +92,15 @@
     </ClCompile>
     <ClCompile Include="회의실 배정(1931).cpp">
       <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="ATM(11399).cpp">
+      <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="잃어버린 괄호(1541).cpp">
+      <Filter>소스 파일\그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="수 찾기(1920).cpp">
+      <Filter>소스 파일\이분탐색</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

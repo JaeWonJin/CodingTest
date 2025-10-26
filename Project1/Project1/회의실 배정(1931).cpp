@@ -35,7 +35,7 @@ int main()
 
 	for (int i = 0; i < N; ++i)
 	{
-		cout << vecMeetingSchedule[i].first << " " << vecMeetingSchedule[i].second << "\n";
+		//cout << vecMeetingSchedule[i].first << " " << vecMeetingSchedule[i].second << "\n";
 		if (EndTime <= vecMeetingSchedule[i].first)
 		{
 			EndTime = vecMeetingSchedule[i].second;

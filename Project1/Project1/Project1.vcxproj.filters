@@ -9,10 +9,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\정렬">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="소스 파일\브루트포스">
       <UniqueIdentifier>{016a6859-3dcf-4203-818a-e48c17029e41}</UniqueIdentifier>
     </Filter>
@@ -27,6 +23,13 @@
     </Filter>
     <Filter Include="소스 파일\이분탐색">
       <UniqueIdentifier>{066f5fd2-b187-4c6b-81aa-f8bfb3fed5f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\정렬">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\투 포인터">
+      <UniqueIdentifier>{835b16c0-dad1-4c7f-8847-0b26a1f264fd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +110,12 @@
     </ClCompile>
     <ClCompile Include="공유기 설치(2110).cpp">
       <Filter>소스 파일\이분탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="두 수의 합(3273).cpp">
+      <Filter>소스 파일\투 포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="수들의 합 5(2018).cpp">
+      <Filter>소스 파일\투 포인터</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -117,5 +117,17 @@
     <ClCompile Include="수들의 합 5(2018).cpp">
       <Filter>소스 파일\투 포인터</Filter>
     </ClCompile>
+    <ClCompile Include="주몽(1940).cpp">
+      <Filter>소스 파일\투 포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="수열(2559).cpp">
+      <Filter>소스 파일\투 포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="두 용액(2470).cpp">
+      <Filter>소스 파일\투 포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="부분합(1806).cpp">
+      <Filter>소스 파일\투 포인터</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

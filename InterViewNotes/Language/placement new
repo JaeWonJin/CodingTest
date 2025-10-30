@@ -1,0 +1,38 @@
+1. placement new
+이미 할당되어 있는 메모리에 객체를 정식으로 생성하는 문법
+해당하는 메모리 구간을 해당 타입의 객체로 공식 등록시킴
+
+2. C++ 객체의 생명주기
+C++의 메모리 모델은 다음처럼 세 단계를 구분합니다:
+단계								의미
+할당 (allocation)			ㅣ 단순히 바이트 단위의 메모리를 확보 (malloc, operator new 등)
+객체 생성 (construction)	 ㅣ해당 메모리에 생성자를 호출 → 타입과 생명주기 부여
+소멸 (destruction)			ㅣ소멸자 호출로 객체 종료, 자원 해제
+해제 (deallocation)			ㅣ메모리 자체를 OS/런타임에 반환 (free, operator delete 등)
+
+여기서 placement new는 바로 2단계, 객체 생성(construction)을 담당합니다.
+
+3. reinterpret_cast + 생성자 호출이 실제로 객체를 생성하지 못하는 이유
+char buffer[sizeof(Foo)];
+Foo* ptr = reinterpret_cast<Foo*>(buffer);
+ptr->Foo::Foo();
+-> 해당 코드는 생성자를 직접 호출한 것처럼 보이지만, 표준적으로는 Undefined Behavior(UB)임. 이유는 다음과 같음 :
+1) 객체의 생명주기가 시작되지 않음
+C++은 객체의 생명주기가 시작된 메모리만을 합법적으로 그 타입으로 접근할 수 있다고 명시한다.
+따라서 위의 코드는 객체로 등록되지 않은 메모리에서 Foo를 사용하는 행위가 되어 UB가 된다.
+
+2) 생성자 직접 호출은 이미 Foo 객체인 메모리에서만 가능하다
+ptr->Foo::Foo() 는 이미 Foo 객체로 존재하는 메모리만 재초기화 할 수 있음.
+타입이 없는 버퍼에 대해서는 호출이 불가능하거나 UB임
+
+3) reinterpret_cast는 타입의 해석만 바꿀 뿐, 실제 객체를 생성하지 않음
+reinterpret_cast<Foo*>(buffer)는 단지 포인터를 재해석할 뿐, 그 위치에 Foo 객체를 생성하거나 타입을 부여하지 않는다.
+따라서 컴파일러 입장에서 여전히 buffer는 char 배열(포인터)일 뿐이다.
+
+4. placement new는 이 문제를 해결한다.
+char buffer[sizeof(Foo)];
+Foo* ptr = new (buffer) Foo(10, 20);	// 정식 객체 생성
+이 시점에서 다음과 같은 일이 발생함 :
+1) 컴파일러는 buffer의 주소를 Foo 객체로 정식 등록
+2) Foo 생성자를 호출해 초기화 수행
+3) 그 위치는 이제 Foo 객체가 살아 있는 메모리로 인식됨

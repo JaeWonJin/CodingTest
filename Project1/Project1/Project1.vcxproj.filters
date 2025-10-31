@@ -31,6 +31,9 @@
     <Filter Include="소스 파일\투 포인터">
       <UniqueIdentifier>{835b16c0-dad1-4c7f-8847-0b26a1f264fd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\누적합">
+      <UniqueIdentifier>{453a034c-140e-4917-b72b-362adeb4978b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="정렬.cpp">
@@ -128,6 +131,15 @@
     </ClCompile>
     <ClCompile Include="부분합(1806).cpp">
       <Filter>소스 파일\투 포인터</Filter>
+    </ClCompile>
+    <ClCompile Include="구간 합 구하기 4(11659).cpp">
+      <Filter>소스 파일\누적합</Filter>
+    </ClCompile>
+    <ClCompile Include="나머지 합(10986).cpp">
+      <Filter>소스 파일\누적합</Filter>
+    </ClCompile>
+    <ClCompile Include="체스판 다시 칠하기 2(25682).cpp">
+      <Filter>소스 파일\누적합</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

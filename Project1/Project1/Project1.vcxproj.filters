@@ -147,5 +147,8 @@
     <ClCompile Include="1859(백만 장자 프로젝트).cpp">
       <Filter>소스 파일\SWEA</Filter>
     </ClCompile>
+    <ClCompile Include="1859(백만 장자 프로젝트)_2.cpp">
+      <Filter>소스 파일\SWEA</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

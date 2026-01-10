@@ -40,6 +40,12 @@
     <Filter Include="소스 파일\DP">
       <UniqueIdentifier>{5bcc9b18-bcf2-4369-9df6-636359e3434a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\프로그래머스">
+      <UniqueIdentifier>{f9df6cb2-72b5-4124-b28e-0bbab38492a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스\Lv1">
+      <UniqueIdentifier>{ac581173-81f7-4f7d-a231-8a40e1309dee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="정렬.cpp">
@@ -170,6 +176,33 @@
     </ClCompile>
     <ClCompile Include="정수 삼각형(1932).cpp">
       <Filter>소스 파일\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="쉬운 계단 수.cpp">
+      <Filter>소스 파일\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="포도주 시식(2156).cpp">
+      <Filter>소스 파일\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="디스크 컨트롤러.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="최고의 집합.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="가장 먼 노드.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="시험장 나누기.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="단지번호붙이기(2667).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="헌내기는 친구가 필요해(21736).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="알고스팟(1261).cpp">
+      <Filter>소스 파일\그래프</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

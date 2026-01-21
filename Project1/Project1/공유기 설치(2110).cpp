@@ -11,13 +11,13 @@ bool PlaceAvailable(int _Dist)
 {
 	int Cnt = C - 1;
 	int CurIdx = 0;
-	int LastIdx = 0;
+	int StartIdx = 0;
 	while (CurIdx < vecPos.size())
 	{
-		int Interval = vecPos[CurIdx] - vecPos[LastIdx];
+		int Interval = vecPos[CurIdx] - vecPos[StartIdx];
 		if (Interval >= _Dist)
 		{
-			LastIdx = CurIdx;
+			StartIdx = CurIdx;
 			--Cnt;
 			if (Cnt == 0)
 			{

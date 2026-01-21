@@ -43,8 +43,17 @@
     <Filter Include="소스 파일\프로그래머스">
       <UniqueIdentifier>{f9df6cb2-72b5-4124-b28e-0bbab38492a7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\프로그래머스\Lv1">
-      <UniqueIdentifier>{ac581173-81f7-4f7d-a231-8a40e1309dee}</UniqueIdentifier>
+    <Filter Include="소스 파일\프로그래머스\고득점키트">
+      <UniqueIdentifier>{f7a78471-5531-4a5a-9044-55185c6cce57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\프로그래머스\고득점키트\그래프">
+      <UniqueIdentifier>{70cb1ae1-9382-486c-a50a-3cfd92f40737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\DP\최장 부분증가수열">
+      <UniqueIdentifier>{7adb8801-647a-4007-97d3-bc8b4b3bbfa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\분할정복">
+      <UniqueIdentifier>{c9cbcb87-0765-4638-a727-633d739a8833}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -189,9 +198,6 @@
     <ClCompile Include="최고의 집합.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
-    <ClCompile Include="가장 먼 노드.cpp">
-      <Filter>소스 파일\프로그래머스</Filter>
-    </ClCompile>
     <ClCompile Include="시험장 나누기.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
@@ -221,6 +227,36 @@
     </ClCompile>
     <ClCompile Include="오민식의 고민(1219).cpp">
       <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="집합의 표현(1717).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="여행 가자(1976).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="거짓말(1043).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="사이클 게임(20040).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="친구 네트워크(4195).cpp">
+      <Filter>소스 파일\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="순위.cpp">
+      <Filter>소스 파일\프로그래머스\고득점키트\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="가장 먼 노드.cpp">
+      <Filter>소스 파일\프로그래머스\고득점키트\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="방의 개수.cpp">
+      <Filter>소스 파일\프로그래머스\고득점키트\그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="가장 긴 증가하는 부분 수열3%2812738%29.cpp">
+      <Filter>소스 파일\DP\최장 부분증가수열</Filter>
+    </ClCompile>
+    <ClCompile Include="가장 긴 증가하는 부분 수열 5(14003).cpp">
+      <Filter>소스 파일\DP\최장 부분증가수열</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

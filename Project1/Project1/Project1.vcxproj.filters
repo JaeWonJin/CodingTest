@@ -51,6 +51,21 @@
     <Filter Include="프로그래머스\고득점키트\그래프">
       <UniqueIdentifier>{70cb1ae1-9382-486c-a50a-3cfd92f40737}</UniqueIdentifier>
     </Filter>
+    <Filter Include="백준\문자열">
+      <UniqueIdentifier>{315e42a1-462a-496e-bbb7-d90ca894e275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="백준\문자열\KMP">
+      <UniqueIdentifier>{dc9df405-16ed-4f6c-b21b-1289a9ab222b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="프로그래머스\고득점키트\Hash">
+      <UniqueIdentifier>{12408823-7335-444f-ae3d-d9c16cf44fbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="프로그래머스\고득점키트\스택/큐">
+      <UniqueIdentifier>{0b71a213-c864-4699-b0a2-3017e22af3df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="프로그래머스\고득점키트\힙">
+      <UniqueIdentifier>{99bd92d5-8bc1-485f-856f-506917460f2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="정렬.cpp">
@@ -188,9 +203,6 @@
     <ClCompile Include="포도주 시식(2156).cpp">
       <Filter>백준\DP</Filter>
     </ClCompile>
-    <ClCompile Include="디스크 컨트롤러.cpp">
-      <Filter>프로그래머스</Filter>
-    </ClCompile>
     <ClCompile Include="최고의 집합.cpp">
       <Filter>프로그래머스</Filter>
     </ClCompile>
@@ -265,6 +277,54 @@
     </ClCompile>
     <ClCompile Include="별 찍기 - 11(2448).cpp">
       <Filter>백준\분할정복</Filter>
+    </ClCompile>
+    <ClCompile Include="찾기(1786).cpp">
+      <Filter>백준\문자열\KMP</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 제곱(4354).cpp">
+      <Filter>백준\문자열\KMP</Filter>
+    </ClCompile>
+    <ClCompile Include="광고(1305).cpp">
+      <Filter>백준\문자열\KMP</Filter>
+    </ClCompile>
+    <ClCompile Include="완주하지 못한 선수.cpp">
+      <Filter>프로그래머스\고득점키트\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="폰켓몬.cpp">
+      <Filter>프로그래머스\고득점키트\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="전화번호 목록.cpp">
+      <Filter>프로그래머스\고득점키트\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="하노이의 탑.cpp">
+      <Filter>프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="전력망을 둘로 나누기.cpp">
+      <Filter>프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="의상.cpp">
+      <Filter>프로그래머스\고득점키트\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="베스트앨범.cpp">
+      <Filter>프로그래머스\고득점키트\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="올바른 괄호.cpp">
+      <Filter>프로그래머스\고득점키트\스택/큐</Filter>
+    </ClCompile>
+    <ClCompile Include="다리를 지나는 트럭.cpp">
+      <Filter>프로그래머스\고득점키트\스택/큐</Filter>
+    </ClCompile>
+    <ClCompile Include="주식가격.cpp">
+      <Filter>프로그래머스\고득점키트\스택/큐</Filter>
+    </ClCompile>
+    <ClCompile Include="디스크 컨트롤러.cpp">
+      <Filter>프로그래머스\고득점키트\힙</Filter>
+    </ClCompile>
+    <ClCompile Include="더 맵게.cpp">
+      <Filter>프로그래머스\고득점키트\힙</Filter>
+    </ClCompile>
+    <ClCompile Include="이중우선순위큐.cpp">
+      <Filter>프로그래머스\고득점키트\힙</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
